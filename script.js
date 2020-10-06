@@ -41,7 +41,7 @@ onload = function(){
             let [encoded, tree_structure, info] = coder.encode(text);
             downloadFile(uploadedFile.name.split('.')[0] + '_encoded.txt', encoded);
             treearea.innerText = tree_structure;
-            treearea.style.marginTop = '1000px';
+            treearea.style.marginTop = '2000px';
             temptext.innerText = info;
         };
         fileReader.readAsText(uploadedFile, "UTF-8");
@@ -69,7 +69,7 @@ onload = function(){
             let [decoded, tree_structure, info] = coder.decode(text);
             downloadFile(uploadedFile.name.split('.')[0] + '_decoded.txt', decoded);
             treearea.innerText = tree_structure;
-            treearea.style.marginTop = '1000px';
+            treearea.style.marginTop = '2000px';
             temptext.innerText = info;
         };
         fileReader.readAsText(uploadedFile, "UTF-8");
