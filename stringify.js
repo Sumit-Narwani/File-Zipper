@@ -1,4 +1,6 @@
 function stringify(node){
+    
+    // Encoding huffman tree
     if(typeof(node[1])==="string"){
         return '\''+node[1];
     }
