@@ -1,3 +1,10 @@
+/* Created:
+    Sumit Narwani 06/10/2020
+
+*/
+
+
+
 function decode(data){
     data = data.split('\n');
     if(data.length===4){

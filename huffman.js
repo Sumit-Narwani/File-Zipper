@@ -1,6 +1,14 @@
+/* Created:
+    Sumit Narwani 06/10/2020
+
+*/
+
+
+
+
 import { BinaryHeap } from './heap.js';
 
-export { HuffmanCoder };
+export {HuffmanCoder};
 
 class HuffmanCoder{
     

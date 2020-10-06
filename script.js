@@ -1,3 +1,9 @@
+/* Created:
+    Sumit Narwani 06/10/2020
+
+*/
+
+
 import { HuffmanCoder } from './huffman.js';
 
 onload = function(){
@@ -16,7 +22,7 @@ onload = function(){
 
 
     //TODO: ENCODE FUNCTION
-    encode.onclick() = function(){
+    encode.onclick = function (){
 
         const uploadedFile = upload.files[0];
         if(uploadedFile === undefined){
@@ -45,7 +51,7 @@ onload = function(){
 
 
     //TODO: DECODE FUNCTION
-    decode.onclick() = function(){
+    decode.onclick = function (){
         const uploadedFile = upload.files[0];
         if(uploadedFile === undefined){
             alert("No file uploaded!");
@@ -61,7 +67,7 @@ onload = function(){
             }
 
             let [decoded, tree_structure, info] = coder.decode(text);
-            downloadFile(uploadedFile.name.split('.')[0] + '_decoded.txt' + decoded);
+            downloadFile(uploadedFile.name.split('.')[0] + '_decoded.txt', decoded);
             treearea.innerText = tree_structure;
             treearea.style.marginTop = '2000px';
             temptext.innerText = info;
